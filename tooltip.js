@@ -14,7 +14,7 @@ class Tooltip extends HTMLElement {
 
   _showTooltip() {
     this._tooltipContainer = document.createElement("div");
-    this._tooltipContainer.textContent = " text";
+    this._tooltipContainer.textContent = "showing tooltip text";
     this.appendChild(this._tooltipContainer);
   }
 
