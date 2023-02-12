@@ -12,7 +12,7 @@ class Tooltip extends HTMLElement {
         position:absolute;
         z-index:10;
       } 
-      :host{
+      :host(.important){
         background-color:grey;
       }
     </style>
