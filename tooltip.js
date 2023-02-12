@@ -15,6 +15,9 @@ class Tooltip extends HTMLElement {
       :host(.important){
         background-color:grey;
       }
+      :host-context(p){
+        color:orange;
+      }
     </style>
     <slot>some default</slot>
     <span> (?)</span>
