@@ -7,7 +7,7 @@ class Tooltip extends HTMLElement {
     this.shadowRoot.innerHTML = `
     <style>
       div {
-        backgroung-color:black;
+        background-color:black;
         color:white;
         position:absolute;
         z-index:10;
@@ -22,7 +22,7 @@ class Tooltip extends HTMLElement {
     if (this.hasAttribute("text")) {
       this._tooltipText = this.getAttribute("text");
     }
-    const tooltipIcon = document.createElement("span");
+    const tooltipIcon = this.shadowRoot.querySelector("span");
     // tooltipIcon.textContent = " (?)";
     tooltipIcon.addEventListener("mouseenter", this._showTooltip.bind(this));
     tooltipIcon.addEventListener("mouseleave", this._hideTooltip.bind(this));
