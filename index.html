@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Components</title>
+    <style> 
+        div {
+            border: 2px solid lime;
+        }
+    </style>
     <script src="tooltip.js"></script>
 </head>
 <body>
     <p><uc-tooltip text="set of standards">Web Components</uc-tooltip> are awesome!</p>
     <uc-tooltip>Here we go</uc-tooltip><br/>
     <uc-tooltip></uc-tooltip>
+    <div> this does not get the styling of the web component</div>
 </body>
 </html>
