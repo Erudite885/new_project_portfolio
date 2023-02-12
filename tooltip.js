@@ -11,6 +11,9 @@ class Tooltip extends HTMLElement {
         color:white;
         position:absolute;
         z-index:10;
+      } 
+      :host{
+        background-color:grey;
       }
     </style>
     <slot>some default</slot>
