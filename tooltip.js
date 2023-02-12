@@ -29,7 +29,7 @@ class Tooltip extends HTMLElement {
   }
 
   _hideTooltip() {
-    this.removeChild(this._tooltipContainer);
+    this.shadowRoot.removeChild(this._tooltipContainer);
   }
 }
 
